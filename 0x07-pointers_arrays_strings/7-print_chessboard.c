@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
-  * print_chessboard -fn to  Print the chessboard
-  * @a:variable holding  array of pieces
-  * Return: Nothing null.
+  * print_chessboard -fn to Print the chessboard
+  * @a: holds array of pieces
+  * Return: Nothing.
   */
 void print_chessboard(char (*a)[8])
 {
