@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 
 /**
   * print_list - fn that Prints all elements of a list
