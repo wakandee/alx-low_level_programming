@@ -9,15 +9,10 @@ void print_number(int n)
 {
 	unsigned int m, d, count;
 
-	if (n == 0)
+	if (n < 0)
 	{
-		_putchar('0');
-		return; // Exit the function early when n is zero
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		m = -n;
+		_putchar(45);
+		m = n * -1;
 	}
 	else
 	{
@@ -35,7 +30,6 @@ void print_number(int n)
 
 	for (; count >= 1; count /= 10)
 	{
-		_putchar((m / count) + '0');
+		_putchar(((m / count) % 10) + 48);
 	}
 }
-
