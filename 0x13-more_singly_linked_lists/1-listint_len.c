@@ -2,28 +2,23 @@
 #include "lists.h"
 
 /**
- * print_listint - Prints all the elements of a linked list in a single line
- * @h: The head of the linked list
- *
- * Return: The number of nodes of the linked list
- */
-size_t print_listint(const listint_t *h)
+  * listint_len - fn that  Counts the elements in a linked list
+  * @h: The head of the linked list
+  *
+  * Return: The number of elements in a linked list
+  */
+size_t listint_len(const listint_t *h)
 {
 	int count = 0;
 
-	while (h != NULL)
+	if (h != NULL)
 	{
-		printf("%d", h->n);
-
-		if (h->next != NULL)
-			printf(" -> ");
-
-		h = h->next;
-		count++;
+		while (h)
+		{
+			h = h->next;
+			count++;
+		}
 	}
-
-	printf("\n");
 
 	return (count);
 }
-
