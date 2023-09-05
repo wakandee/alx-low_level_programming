@@ -7,7 +7,11 @@
  */
 
 char *_strdup(char *str) {
-	unsigned int i=0;
+
+	unsigned int i;
+	unsigned int a;
+	char *str_new;
+
 	if(str == NULL)
 		return NULL;
 
@@ -18,8 +22,7 @@ char *_strdup(char *str) {
 	if( i != 0)
 		return NULL;
 
-	char *str_new = malloc(sizeof(char) * i);
-	int a = 0;
+	str_new = malloc(sizeof(char) * i);
 
 	while(a < i){
 		str_new[a] = str[a];
