@@ -2,13 +2,13 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-/*
- * create_array -  funtion that create arrays of characters using malloc
- * @size -hold the size of the array
- * @c - hold the character value
- *
- *
- */
+/**
+  * create_array - creates an array of chars
+  * @size: The size of the array
+  * @c: The char to fill in the array
+  *
+  * Return: The array filled
+  */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
