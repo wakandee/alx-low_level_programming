@@ -6,14 +6,14 @@
  *
  */
 
-char *_strdup (char *str)
+char *_strdup(char *str)
 {
 	unsigned int i = 1;
 	unsigned int a = 0;
 	char *str_new;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	while (str[i])
 	{
@@ -32,5 +32,5 @@ char *_strdup (char *str)
 	}
 
 	str_new[i] = '\0';
-	return str_new;
+	return (str_new);
 }
