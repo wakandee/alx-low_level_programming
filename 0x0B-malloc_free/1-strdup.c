@@ -6,26 +6,27 @@
  *
  */
 
-char *_strdup(char *str) {
-
+char *_strdup (char *str)
+{
 	unsigned int i = 1;
 	unsigned int a = 0;
 	char *str_new;
 
-	if(str == NULL)
+	if (str == NULL)
 		return NULL;
 
-	while(str[i])
+	while (str[i])
 	{
 		i++;
 	}
 
 	str_new = malloc((sizeof(char) * i) + 1);
 
-	if( str_new == NULL)
+	if (str_new == NULL)
 		return (NULL);
 
-	while(a < i){
+	while (a < i)
+	{
 		str_new[a] = str[a];
 		a++;
 	}
