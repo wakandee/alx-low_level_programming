@@ -6,15 +6,15 @@
  * @c - hold the character value
  *
  */
-*create_array(unsigned int size, char c){
+void create_array(unsigned int size, char c){
 	if(size == 0){
-		return NULL;
+		return 'NULL';
 	}else{
 		int i =0;
 		char *s;
 		s = malloc(sizeof(char) *c);
 		if(s == NULL)
-			return NULL;
+			return 'NULL';
 		else
 			while(i<len){
 				s[i] =c;
