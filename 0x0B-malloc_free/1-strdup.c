@@ -8,20 +8,22 @@
 
 char *_strdup(char *str) {
 
-	unsigned int i;
-	unsigned int a;
+	unsigned int i = 1;
+	unsigned int a = 0;
 	char *str_new;
 
 	if(str == NULL)
 		return NULL;
 
-	while(str[i] != '\0'){
+	while(str[i])
+	{
 		i++;
 	}
+
 	str_new = malloc((sizeof(char) * i) + 1);
 
-	if( str_new == 0)
-		return NULL;
+	if( str_new == NULL)
+		return (NULL);
 
 	while(a < i){
 		str_new[a] = str[a];
@@ -29,6 +31,5 @@ char *_strdup(char *str) {
 	}
 
 	str_new[i] = '\0';
-
 	return str_new;
 }
