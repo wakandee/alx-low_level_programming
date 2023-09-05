@@ -3,7 +3,7 @@
 
 /**
  * _strdup - functon that duplicates na array
- * @str: - variable for pointing to original charcter 
+ * @str: variable for pointing to original charcter
  *
  * Return: the value of new array
  */
