@@ -1,7 +1,17 @@
 # make file to print school
 #
 
-school: 
-	gcc -c school.c
+school: main.c school.c
+	    gcc main.c school.c -o school
 
 all: school
+
+clean:
+	    rm -f schschool: main.c school.c
+	        gcc main.c school.c -o school
+
+all: school
+
+clean:
+	    rm -f school
+
