@@ -1,0 +1,7 @@
+# make file to print school
+#
+
+school: 
+	gcc -c school.c
+
+all: school
