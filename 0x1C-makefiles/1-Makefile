@@ -1,9 +1,4 @@
-# makefile
-
-CC := gcc
-SRC := .c
-
-school:
-	${CC} school${SRC} -o school
-
-all: school
+CC = gcc
+SRC = main.c school.c
+all: $(SRC)
+	$(CC) $(SRC) -o school
